@@ -1,0 +1,171 @@
+.header {
+    background-color: black; /* Цвет фона шапки */
+    height: 70px; /* Высота шапки */
+    display: flex;
+    align-items: center; /* Центрирование содержимого по вертикали */
+}
+
+.header__logo-container {
+    display: flex;
+    align-items: center; /* Центрирование содержимого по вертикали */
+    margin-right: 20px; /* Отступ справа (при необходимости) */
+}
+
+.header__logo {
+    display: block; /* Изображение логотипа отображается как блочный элемент */
+    height: 28px;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+}
+
+.header__menu-item {
+    padding: 0 15px; /* Примерный отступ, измените в соответствии с вашим дизайном */
+}
+
+.header__menu-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px; /* Примерный размер шрифта, измените в соответствии с вашим дизайном */
+}
+
+
+/* фильтры */
+
+.filter, .filter--category{
+margin-bottom: 40px;
+}
+
+input[type="text" i] {
+    padding-block: 0;
+    padding-inline: 0;
+    border: none;
+}
+
+/* Стили для контейнера с датой и календарем */
+.filter__datepicker {
+    position: relative;
+    display: inline-block;
+    width: 360px;
+}
+
+/* Стили для поля ввода даты */
+.filter__date {
+    width: 360px;
+    height: 60px;
+    border: none;
+}
+
+/* Стили для календаря */
+.calendar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 360px;
+    height: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для отображения календаря при фокусе на поле ввода */
+.filter__date:focus + .calendar {
+    display: block;
+}
+
+/* Стили для текстовой метки "Дата публикации" */
+.filter__label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* Стили для контейнера с меткой "Категория" и выпадающим списком */
+.filter__select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 360px;
+}
+
+/* Стили для выпадающего списка */
+.filter__select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('wp-content/themes/takie-dela/assets/images/arrow.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+/* Стили для изображения стрелки */
+.arrow-image {
+    width: 20px; /* Размер стрелки можно настроить по вашему усмотрению */
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Стили для отображения списка при наведении */
+.filter__select:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.filter__input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Расстояние между полями ввода */
+    margin-bottom: 40px;
+}
+
+.filter__input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для кнопки */
+.filter__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 260px;
+    height: 50px;
+    background: #E65639; /* Красный цвет */
+    color: #FFFFFF; /* Белый цвет текста */
+    border: none; /* Убираем границу */
+    cursor: pointer; /* Изменение курсора при наведении */
+    font-family: 'Futura PT', sans-serif; /* Шрифт */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+/* Стили для иконок */
+.filter__button .icon {
+    display: none;
+    width: 20px;
+    height: 20px;
+    flex: none;
+}
+
+/* Псевдокласс для hover состояния */
+.filter__button:hover {
+    background: #FF0000; /* Изменяем цвет при наведении */
+}
+

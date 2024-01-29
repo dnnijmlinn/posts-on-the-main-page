@@ -1,0 +1,145 @@
+@import url('https://design.nuzhnapomosh.ru/fonts/fonts-futura-leksa-romanovsky.css');
+
+
+.post-content {
+    background: #fff; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    margin-bottom: 30px; 
+    font-family: Arial, sans-serif; 
+    flex: 0 0 calc(33.333% - 20px); 
+
+}
+
+.entry-thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+.entry-meta {
+    color: #333;
+    font-size: 0.9em; 
+    margin-bottom: 5px; 
+}
+
+.entry-title {
+    color: #000; 
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.entry-content {
+    color: #555; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.entry-categories{
+    margin-bottom: 20px;
+    font-family: 'Futura PT', sans-serif;
+    line-height: 14px;
+}
+
+.entry-categories a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #302F2D;
+    font-size: 12px;
+
+}
+
+.entry-description{
+    font-family: 'Futura PT', sans-serif;
+    font-size: 20px;
+
+}
+
+
+.entry-authors {
+    font-size: 17px; 
+    color: #302F2D; 
+}
+
+
+.posts-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: space-between;
+}
+
+.post-article {
+    width: 360px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    background: #fff;
+}
+
+.posts-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+}
+
+.article {
+    flex: 1; 
+    width: 360px; 
+}
+
+.articles-container {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    align-items: stretch;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px; 
+}
+
+
+.post-content {
+    flex: 1; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    background: #fff;
+    margin-bottom: 30px; 
+    font-family: Arial, sans-serif; 
+    max-width: 360px;
+    height: 600px;
+}
+
+.posts-row article {
+    flex: 0 0 auto;
+    margin-right: 20px; 
+}
+
+.internal-content{
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 376px;
+}
+
+.internal-content-second{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.entry-footer{
+    margin-top: -40px;
+}
+
+.entry-authors {
+    display: flex;
+    align-items: center; 
+}
+
+.entry-authors img {
+    margin-right: 10px; 
+}
+.articles-title {
+    margin-bottom: 20px; 
+}

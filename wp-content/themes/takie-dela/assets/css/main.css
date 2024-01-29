@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+.content {
+    width: 1160px; 
+    margin: 0 auto;
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+}
+
+.page-title{
+    font-size: 50px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.content > article {
+    flex-basis: 31%; 
+    margin-bottom: 20px; 
+}
+
+
+.btn_download {
+    width: 100%;
+    height: 80px;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #302F2D;
+    cursor: pointer;
+  }
+
+.btn_download {
+    text-transform: uppercase;
+}
+
+
+.content-pagination {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    align-items: center;
+    margin-top: 40px;
+}
+
+.pagination a, .pagination span {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}
+
+.page-numbers {
+    padding: 5px 10px;
+}
+
+.page-numbers.current {
+    color: #E65639;
+}
+
+.prev.page-numbers, .next.page-numbers {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.pagination .prev, .pagination .next {
+    position: absolute;
+}
+
+.pagination .prev {
+    left: 0;
+}
+
+.pagination .next {
+    right: 0;
+}
+
+.content {
+    position: relative;
+}
+
+.content-pagination {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+.pagination a, .pagination span {
+    text-decoration: none;
+    color: black; 
+}
+
+.pagination .prev, .pagination .next {
+    margin-right: 10px; 
+    margin-left: 10px;
+}
